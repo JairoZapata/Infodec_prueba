@@ -16,6 +16,7 @@
         <th scope="col">Parcial 1</th>
         <th scope="col">Parcial 2</th>
         <th scope="col">Parcial 3</th>
+        <th scope="col">Promedio</th>
         <th scope="col">Acciones</th>
       </tr>
     </thead>
@@ -27,6 +28,7 @@
             <td>{{ $nota->parcial_1 }}</td>
             <td>{{ $nota->parcial_2 }}</td>
             <td>{{ $nota->parcial_3 }}</td>
+            <td>{{ $nota->promedio }}</td>
             <td>
               <a href="{{ route('notas.destroy', $nota->id) }}" class="btn btn-secondary">Eliminar</a>
             </td>
